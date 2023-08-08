@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bst.c" />
+    <ClCompile Include="list.c" />
     <ClCompile Include="list.h" />
+    <ClCompile Include="wk2main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bst.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
