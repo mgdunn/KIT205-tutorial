@@ -1,0 +1,105 @@
+/* Container for page */
+#wrapper {
+    width: 70%;
+
+    /* Setting a value of auto will result in the browser calculating the margin */
+    margin: auto;
+
+    /* This will flow (cascade) down to child elements */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ID selector */
+#title {
+    color: #2c4558;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 28px;
+}
+
+/* Selector list: element, id and element */
+p,
+#toc a {
+    color: black;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 16px;
+
+    /* Change the height of a line of text */
+    line-height: 130%;
+}
+
+/* Selects the element with the ID 'toc' (for Table of Contents) */
+#toc {
+    /*
+    border-width: 2px;
+    border-style: solid;
+    border-color: grey;
+    */
+
+    /* value order: width style colour */
+    border: 1px solid #d4d4d4;
+    background-color: #f2f3f4;
+
+    position: sticky;
+    top: 5px;
+}
+
+/* Selects anchor (a) elements within the #toc */
+#toc a {
+    /* This property can be used remove the default link underline */
+    text-decoration: none;
+}
+
+/* Selects anchor (a) elements within the #toc in the hover state */
+#toc a:hover {
+    /* ... then add it back on hover */
+    text-decoration: underline;
+}
+
+#toc-title {
+    background-color: #2c4558;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Selects all img elements (there is only one) */
+img {
+    width: 150px;
+    float: right;
+    margin: 15px 0 15px 15px;
+    /* try adding a decaorative border around the image
+    or changing some other aspect of it */
+}
+
+/* Class selector */
+.subject {
+    background-color: blanchedalmond;
+    /* width: 200px; */
+    /* display: inline-block; */
+}
+
+/* Illustration of relative font size and pseudo-class */
+strong:hover {
+    font-size: 150%;
+}
+
+
+
+
+/* Used for reference list */
+#sources p,
+#sources li  {
+    font-size: 14px;
+}
+
+#sources ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+
+.border {
+    border: 2px solid orange;
+}

@@ -1,0 +1,31 @@
+form {
+  background-color: #f2f3f4;
+  border: 1px solid #d4d4d4;
+  width: 250px;
+  padding: 10px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  margin: 5px 0 15px 0;
+  border: 1px solid darkgrey;
+}
+
+#submitBtn {
+  font-size: 14px;
+}
+
+/* input:valid {
+  border: 1px solid darkgrey;
+}
+
+input:invalid {
+  border-color: red;
+} */
+
+.invalid {
+  border-color: rgb(184, 64, 64);
+  background-color: rgb(244, 215, 220);
+}

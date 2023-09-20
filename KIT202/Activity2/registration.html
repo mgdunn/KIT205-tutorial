@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="[Your Name]">
+    <title>Marathon 2023 Registration</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <!-- <img src="images/london_marathon.png" id="header-img" /> -->
+        <h1>Marathon 2023</h1>
+      </header>
+      <div id="content">
+        <p>Enter your details below to register:</p>
+        <form>
+          <table>
+            <tr>
+              <td>
+                <label for="fname">First Name</label>
+              </td>
+              <td><input class="form-control" type="text" id="fname" name="fname" required /></td>
+            </tr>
+            <tr>
+              <td><label for="lname">Last Name</label></td>
+              <td><input class="form-control" type="text" id="lname" name="lname" required /></td>
+            </tr>
+            <tr>
+              <td><label for="race">Select a race</label></td>
+              <td>
+                <select class="form-control" name="race" id="race" required>
+                  <option class="form-control" value="" hidden disabled selected>
+                    Select your race
+                  </option>
+                  <option class="form-control" value="5k">Fun Run 5k</option>
+                  <option class="form-control" value="half">Half Marathon</option>
+                  <option class="form-control" value="full">Full Marathon</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="division">Age group</label></td>
+              <td>
+                <select class="form-control" name="division" id="division" required>
+                  <option value="" hidden disabled selected="selected">
+                    Select your age group
+                  </option>
+                  <option class="form-control" value="kids">under 18</option>
+                  <option class="form-control" value="ya">18-30</option>
+                  <option class="form-control" value="adults">30-50</option>
+                  <option class="form-control" value="seniors">50+</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input class="form-control" type="email" id="email" name="email" required /></td>
+            </tr>
+            <tr>
+              <td><label for="password1">Password</label></td>
+              <td>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password1"
+                  name="password1"
+                  minlength="6"
+                  maxlength="12"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password2">Confirm password</label></td>
+              <td>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password2"
+                  name="password2"
+                  minlength="6"
+                  maxlength="12"
+                  required
+                />
+              </td>
+            </tr>
+          </table>
+          <br>
+          <button class="btn" id="form-submit" type="submit">Register</button>
+          <a class="btn" id="form-cancel" href="index.html">Cancel / Back</a>
+        </form>
+      </div>
+      <footer>KIT202 Tutorial 1 | Marathon 2023</footer>
+    </div>
+  </body>
+</html>

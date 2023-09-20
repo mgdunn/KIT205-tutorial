@@ -9,34 +9,14 @@ void main(int argc, char* argv[]) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 int main(int argc, char* argv[]) {
 
-	List my_list;
-	int input;
-	int lowest;
-	int quit;
-	int option;
+	List my_list; //new list
+	int input; //number user inputs into list
+	int lowest; //lowest number in the list
+	int quit; //option to quit
+	int option; //switch option 
 
 
 	my_list = new_list();
@@ -47,7 +27,6 @@ int main(int argc, char* argv[]) {
 
 
 	while (input != 0) {
-
 		if (input < lowest) {
 			lowest = input;
 			insert_at_front(&my_list, input);
@@ -62,7 +41,11 @@ int main(int argc, char* argv[]) {
 	delete_list(&my_list, input);
 
 	while (!quit) {
-		printf("What is your option");
+		printf("What is your option:\n");
+		printf("0 to quit\n");
+		printf("1 to insert");
+		printf("");
+		printf("");
 		scanf_s("%d", option);
 		switch (option) {
 		case 0:
@@ -88,26 +71,30 @@ int main(int argc, char* argv[]) {
 	destroy_list(&my_list);
 }
 
+//Inserts user input into list
 void option_insert(List* my_list) {
-	int option;
+	int input; //value of input
 
 	printf("What number would you like to input: "); 
-	scanf_s("%d", option);
-	insert_at_front(my_list, option);
-
+	scanf_s("%d", &input);
+	insert_at_front(my_list, input);
+	printf("%d was inserted the the front.", input);
 }
 
+//Deletes input from list
 void option_delete(List* my_list){
-	int option;
+	int option; //value of input
 
 	printf("What number would you like to delete: ");
-	scanf_s("%d", option);
+	scanf_s("%d", &option);
 	delete_list(my_list, option);
+	printf("%d was deleted from the list.", option);
 }
 
+//Calls print_list function
 void option_print(List* my_list) {
-
-
+	printf("Printing list: ");
+	print_list(my_list);
 }
 
 List reverse(List* my_list) {
@@ -159,5 +146,6 @@ List merge(List* list1, List* list2) {
 	return merge;
 }
 */
+
 
 

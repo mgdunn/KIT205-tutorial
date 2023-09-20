@@ -1,0 +1,12 @@
+li {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.answer {
+    width: 70%;
+    min-height: 1em;
+    color: blue;
+    padding: 2px;
+    border: 1px solid black;
+}

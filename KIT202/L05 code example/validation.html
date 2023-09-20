@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Week 5</title>
+    <meta name="author" content="Lawrence and KIT202 Class">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/validation.css">
+    <script src="scripts/validation.js" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+        <h1 id="title">
+          <a href="index.html" id="header-back">&lt;</a>
+          Form Validation
+        </h2>
+        <hr>
+
+        <!--
+            The novalidate attribute is required to disable the built-in
+            HTML5 validation and use JS instead.
+        -->
+        <form id="myForm" name="myForm" method="GET" novalidate>
+            <label for="first">First name</label>
+            <input id="first" name="first" type="text" required minlength="3" />
+
+            <label for="last">Last name</label>
+            <input id="last" name="last" type="text"/>
+
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="1" max="120"/>
+
+            <label for="secret">Secret</label>
+            <input id="secret" name="secret" type="password" required />
+
+            <button id="submitBtn" type="submit">
+                <b>Submit</b>
+            </button>
+            <!-- Alternative way of defining a submit button -->
+            <!-- <input type="submit" value="Submit"> -->
+        </form>
+
+    </div>
+  </body>
+</html>
+

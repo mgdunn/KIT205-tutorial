@@ -1,0 +1,41 @@
+#divEl {
+  width: 200px;
+  background-color: rgb(252, 222, 185);
+  border: 1px solid rgb(231, 190, 138);
+  padding: 5px;
+}
+
+#paragraphEl {
+  padding: 10px;
+  background-color: rgb(201, 239, 252);
+  border: 1px solid rgb(88, 182, 182);
+  padding: 5px;
+  margin: 0;
+}
+
+#log {
+  font-size: 14px;
+  font-family: Courier, monospace;
+  /* font-weight: bold; */
+  border: 1px solid grey;
+  width: 90%;
+  height: 300px;
+  padding: 10px;
+
+  /*
+  This property defines what happens when content overflows
+  the element's bounding box. In this case, setting a value
+  of 'scroll' will clip the overflowed content but add scroll
+  bars so it is still accessible.
+  */
+  overflow: scroll;
+}
+
+#elementType {
+  text-align: center;
+  line-height: 25px;;
+  min-height: 25px;
+  width: 30%;
+  border: 1px solid grey;
+  font-size: 14px;
+}

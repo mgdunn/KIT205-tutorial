@@ -107,25 +107,21 @@ void print_in_order_bst_node(BSTNodePtr self) {
 	}
 }
 
+//recursive function to print tree in pre post order
 void print_in_pre_order(BSTNodePtr self) {
 	if (self == NULL) {
 		printf("_");
 	}
 	else {
-		printf("(");
-		printf("%d", self->data_item);
+		printf("(%d", self->data_item);
 		print_in_pre_order(self->left);
 		print_in_pre_order(self->right);
 		printf(")");
 	}
-
 }
 
-//
+//recursive function to print tree in post order
 void print_in_post_order(BSTNodePtr self) {
-	int left_tree;
-	int right_tree;
-
 	if (self == NULL) {
 		printf("_");
 	}
@@ -137,7 +133,7 @@ void print_in_post_order(BSTNodePtr self) {
 	}
 }
 
-//Finds height of tree
+//recursive function to find height of tree
 int find_tree_height(BSTNodePtr self) {
 	int left_tree; //stores height of left tree
 	int right_tree; //stores height of right tree

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Week 5</title>
+    <meta name="author" content="Lawrence and KIT202 Class">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/events.css">
+    <script src="scripts/events.js" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+        <h1 id="title">
+          <a href="index.html" id="header-back">&lt;</a>
+          Events
+        </h2>
+        <hr>
+
+        <!-- Example nested element structure to demo even propagation -->
+        <div id="divEl">
+          <p id="paragraphEl">
+            <button id="btnEl">Button</button>
+          </p>
+        </div>
+
+        <p id="elementType">Mouse over the elements above to ID them...</p>
+
+        <p id="log"></p>
+        <!--
+          Using inline event attribute as a demo of how it's implemented.
+          However, this couples HTML+JS so is not recommended.
+        -->
+        <button id="clearLogBtn" onclick="reset();">Clear</button>
+        <p id="mouseCoords"></p>
+
+    </div>
+
+  </body>
+</html>
+
